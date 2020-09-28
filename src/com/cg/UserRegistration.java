@@ -47,9 +47,9 @@ public class UserRegistration {
 		System.out.println("Welcome to User Registration Page");
 		UserRegistration newUser = new UserRegistration();
 		//for first name
-      // newUser.firstNameValidator();
+       newUser.firstNameValidator();
         //for last name
-     //  newUser.lastNameValidator();
+       newUser.lastNameValidator();
         //for email
        newUser.emailValidator();
 	}
