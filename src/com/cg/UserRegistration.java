@@ -60,7 +60,7 @@ public class UserRegistration {
 	public void passwordValidator() {
 		System.out.println("Enter your Password :");
 		String password = in.next();
-		Pattern pattern = Pattern.compile("^(?=.*[A-Z])(?=.*[0-9]).{8,}");
+		Pattern pattern = Pattern.compile("^(?=.*\\d)(?=.*[A-Z])(?=.*\\W)(?!.*\\W\\w*\\W)(?!.*\\s).{8,}$");
 		Matcher matcher = pattern.matcher(password);
 		Boolean b = matcher.find();
 		if (b)
@@ -74,13 +74,13 @@ public class UserRegistration {
 		System.out.println("Welcome to User Registration Page");
 		UserRegistration newUser = new UserRegistration();
 		// for first name
-		newUser.firstNameValidator();
+		//newUser.firstNameValidator();
 		// for last name
-		newUser.lastNameValidator();
+		//newUser.lastNameValidator();
 		// for email
-		newUser.emailValidator();
+	//	newUser.emailValidator();
 		// for mobile no
-		newUser.mobileNoValidator();
+	//	newUser.mobileNoValidator();
 		//for password
 		newUser.passwordValidator();
 	}
