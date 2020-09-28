@@ -73,16 +73,18 @@ public class UserRegistration {
 	public static void main(String[] args) {
 		System.out.println("Welcome to User Registration Page");
 		UserRegistration newUser = new UserRegistration();
+		
+	
 		// for first name
-		//newUser.firstNameValidator();
+	    newUser.firstNameValidator();
 		// for last name
-		//newUser.lastNameValidator();
+		newUser.lastNameValidator();
 		// for email
-	//	newUser.emailValidator();
+		newUser.emailValidator();
 		// for mobile no
-	//	newUser.mobileNoValidator();
+		newUser.mobileNoValidator();
 		//for password
 		newUser.passwordValidator();
+	
 	}
-
 }
