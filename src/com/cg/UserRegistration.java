@@ -45,6 +45,7 @@ public class UserRegistration {
 			System.out.println("Email is Validated");
 		else
 			System.out.println("Please enter the correct mail id");
+		in.nextLine();
 	}
 	public void mobileNoValidator() {
 		System.out.println("Enter your Mobile No :");
